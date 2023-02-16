@@ -1,0 +1,24 @@
+ @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@1,300&display=swap'); 
+
+ body {
+    font-family: "Roboto",sans-serif;
+   background-color:aqua;}
+
+/*mixin*/
+    
+   @mixin anclas {
+      text-decoration:none;
+      text-transform: uppercase;
+      font-weight: bold;
+      color: $color_1;
+      }
+
+      a {
+         @include anclas
+      }
+
+      .margenImagen 
+         {
+            margin: 10px;
+          }
+      
