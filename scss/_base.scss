@@ -6,19 +6,73 @@
 
 /*mixin*/
     
-   @mixin anclas {
-      text-decoration:none;
-      text-transform: uppercase;
-      font-weight: bold;
-      color: $color_1;
-      }
+ // Mixin para las anclas
+@mixin anclas {
+   text-decoration: none;
+   text-transform: uppercase;
+   font-weight: bold;
+   color: $color_1;
+ }
+ 
+ 
+ a {
+   @include anclas;
+ }
+ 
+ 
+ .margenImagen {
+   margin: 10px;
+ }
+ 
+ 
+ @media screen and (min-width: 992px) {
+   
+   .margenImagen {
+     margin: 20px;
+   }
+ }
+ 
+ 
+ @media screen and (min-width: 768px) and (max-width: 991px) {
+  
+   .margenImagen {
+     margin: 15px;
+   }
+ }
+ 
+ 
+ @media screen and (max-width: 767px) {
+   .margenImagen {
+     margin: 5px;
+   }
+ }
+ 
+ h1 {
+   background-color: red;
+    color: white;
+   font-size: 2rem;
+  text-align: center;
+ }
 
-      a {
-         @include anclas
-      }
+ h2 {
+   background-color:
+   #1d2671 ;
+   font-size:xx-large;
+   color: white;
+ }
 
-      .margenImagen 
-         {
-            margin: 10px;
-          }
-      
+ footer {
+   background-color: black;
+   font-size: small;
+   h3 {
+      color: white;
+   }
+   p {
+      color: white;
+   }
+ }
+ 
+ .mapa {
+   display: flex;
+   justify-content: center;
+}

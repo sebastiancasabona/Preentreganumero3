@@ -30,6 +30,7 @@
 .liBarra {
   float: left;
 }
+
 .liBarra a {
   display: block;
   color: white;
@@ -37,10 +38,24 @@
   padding: 16px;
   text-decoration: none;
 }
+
 .liBarra a:hover {
   background-color: #111;
 }
 
+@media screen and (max-width: 768px) {
+  .ulBarra {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .liBarra {
+    margin-bottom: 0.5rem;
+    float: none;
+  }
+  .liBarra a {
+    padding: 0.5rem;
+  }
+}
 body {
   font-family: "Roboto", sans-serif;
   background-color: aqua;
@@ -56,6 +71,50 @@ a {
 
 .margenImagen {
   margin: 10px;
+}
+
+@media screen and (min-width: 992px) {
+  .margenImagen {
+    margin: 20px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .margenImagen {
+    margin: 15px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .margenImagen {
+    margin: 5px;
+  }
+}
+h1 {
+  background-color: red;
+  color: white;
+  font-size: 2rem;
+  text-align: center;
+}
+
+h2 {
+  background-color: #1d2671;
+  font-size: xx-large;
+  color: white;
+}
+
+footer {
+  background-color: black;
+  font-size: small;
+}
+footer h3 {
+  color: white;
+}
+footer p {
+  color: white;
+}
+
+.mapa {
+  display: flex;
+  justify-content: center;
 }
 
 .bordeFooter {
@@ -134,11 +193,33 @@ button:hover {
   background-color: gray;
 }
 
+.formulario {
+  display: flex;
+  justify-content: center;
+  background-color: cornflowerblue;
+}
+
 .botonWhatsapp img {
   width: 70px;
   position: fixed;
   bottom: 10px;
   right: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 360px) {
+  h1 {
+    font-size: 1rem;
+  }
 }
 
 /*# sourceMappingURL=estilo.css.map */
